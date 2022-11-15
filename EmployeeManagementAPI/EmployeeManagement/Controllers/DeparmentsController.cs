@@ -1,39 +1,43 @@
 ﻿using AutoMapper;
-using EmployeeManagement.DataAccess;
-using EmployeeManagement.DTOs;
 using EmployeeManagement.Entities;
+using EmployeeManagement.Repository.Interfaces;
+using EmployeeManagement.UnitOfWork.Interface;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeManagement.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DeparmentController : ControllerBase
+    public class DeparmentsController : ControllerBase
     {
-        private readonly AppDbContext _dbContext;
         private readonly IMapper _mapper;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public DeparmentController(AppDbContext dbContext, IMapper mapper)
+        public DeparmentsController(IMapper mapper, IUnitOfWork unitOfWork)
         {
-            _dbContext = dbContext;
             _mapper = mapper;
+            _unitOfWork = unitOfWork;
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get([FromRoute] string id)
+        {
+            Department? departmentDb = await _unitOfWork.DepartmentRepository.GetAsync(id);
+            if (departmentDb is null) return NotFound();
+            return Ok(departmentDb);
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(string name)
         {
-            List<Department> departmentsDb = await _dbContext.Departments.ToListAsync();
-            List<DepartmentGetDto> departments = _mapper.Map<List<DepartmentGetDto>>(departmentsDb);
-            return Ok(departments);
+            return Ok(await _unitOfWork.DepartmentRepository.GetAllAsync(d => d.Name.Contains(name)));
         }
-        
         //[HttpPut("{id}")]
         //public async Task<IActionResult> UpdateAsync(string id)
         //{
         //    Employee? employee = _dbContext.Employees.Find(id);
         //    if (employee == null) return NotFound();
-            
+
         //    employee.Name = "D 6";
 
         //    //_dbContext.Departments.Update(new Department

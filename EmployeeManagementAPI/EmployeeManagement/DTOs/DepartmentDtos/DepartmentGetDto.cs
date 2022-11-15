@@ -1,6 +1,4 @@
-﻿
-
-namespace EmployeeManagement.DTOs;
+﻿namespace EmployeeManagement.DTOs.DepartmentDtos;
 
 public class DepartmentGetDto
 {
