@@ -1,0 +1,15 @@
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\obj\Debug\net6.0\EmployeeManagement.DataAccess.csproj.AssemblyReference.cache
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\obj\Debug\net6.0\EmployeeManagement.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\obj\Debug\net6.0\EmployeeManagement.DataAccess.AssemblyInfoInputs.cache
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\obj\Debug\net6.0\EmployeeManagement.DataAccess.AssemblyInfo.cs
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\obj\Debug\net6.0\EmployeeManagement.DataAccess.csproj.CoreCompileInputs.cache
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\bin\Debug\net6.0\EmployeeManagement.DataAccess.deps.json
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\bin\Debug\net6.0\EmployeeManagement.DataAccess.dll
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\bin\Debug\net6.0\EmployeeManagement.DataAccess.pdb
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\bin\Debug\net6.0\EmployeeManagement.Data.dll
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\bin\Debug\net6.0\EmployeeManagement.Data.pdb
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\obj\Debug\net6.0\EmployeeManagement.DataAccess.csproj.CopyComplete
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\obj\Debug\net6.0\EmployeeManagement.DataAccess.dll
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\obj\Debug\net6.0\refint\EmployeeManagement.DataAccess.dll
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\obj\Debug\net6.0\EmployeeManagement.DataAccess.pdb
+D:\EmployeeManagement\src\EmployeeManagement.DataAccess\obj\Debug\net6.0\ref\EmployeeManagement.DataAccess.dll
